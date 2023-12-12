@@ -1,7 +1,9 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+
 public class Main {
     public static void main(String[] args) {
-    var president = President.getThePresident();
+        var president = President.getThePresident();
+        System.out.println(president.hashCode());
+        var anotherPresident = President.getThePresident();
+        System.out.println(anotherPresident.hashCode());
     }
 }
